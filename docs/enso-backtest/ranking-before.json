@@ -1,0 +1,597 @@
+{
+  "label": "before",
+  "week": "2026-10-07",
+  "nino12": 5.2,
+  "nino34": 3.3,
+  "nino4": 1.3,
+  "rows": [
+    {
+      "id": "palisades-tahoe",
+      "name": "Palisades Tahoe",
+      "region": "us-west",
+      "score": 79.13111764705883,
+      "effect": 0.715
+    },
+    {
+      "id": "mammoth",
+      "name": "Mammoth Mountain",
+      "region": "us-west",
+      "score": 94.31789764705881,
+      "effect": 0.9359999999999998
+    },
+    {
+      "id": "june-mountain",
+      "name": "June Mountain",
+      "region": "us-west",
+      "score": 88.17790588235295,
+      "effect": 0.9099999999999998
+    },
+    {
+      "id": "big-bear",
+      "name": "Big Bear Mountain Resort",
+      "region": "us-southwest",
+      "score": 87.61719411764706,
+      "effect": 1
+    },
+    {
+      "id": "snow-valley",
+      "name": "Snow Valley",
+      "region": "us-southwest",
+      "score": 86.1767,
+      "effect": 1
+    },
+    {
+      "id": "alta",
+      "name": "Alta",
+      "region": "us-west",
+      "score": 80.77474117647058,
+      "effect": 0.585
+    },
+    {
+      "id": "snowbird",
+      "name": "Snowbird",
+      "region": "us-west",
+      "score": 79.3130588235294,
+      "effect": 0.585
+    },
+    {
+      "id": "solitude",
+      "name": "Solitude",
+      "region": "us-west",
+      "score": 78.7892988235294,
+      "effect": 0.585
+    },
+    {
+      "id": "brighton",
+      "name": "Brighton",
+      "region": "us-west",
+      "score": 79.98485882352941,
+      "effect": 0.585
+    },
+    {
+      "id": "deer-valley",
+      "name": "Deer Valley",
+      "region": "us-west",
+      "score": 69.26937647058823,
+      "effect": 0.5459999999999999
+    },
+    {
+      "id": "snowbasin",
+      "name": "Snowbasin",
+      "region": "us-west",
+      "score": 61.12817647058823,
+      "effect": 0.38999999999999996
+    },
+    {
+      "id": "park-city",
+      "name": "Park City",
+      "region": "us-west",
+      "score": 71.39749411764706,
+      "effect": 0.5459999999999999
+    },
+    {
+      "id": "heavenly",
+      "name": "Heavenly",
+      "region": "us-west",
+      "score": 80.93764117647058,
+      "effect": 0.7539999999999999
+    },
+    {
+      "id": "northstar",
+      "name": "Northstar",
+      "region": "us-west",
+      "score": 76.54944705882352,
+      "effect": 0.689
+    },
+    {
+      "id": "kirkwood",
+      "name": "Kirkwood",
+      "region": "us-west",
+      "score": 87.75505882352941,
+      "effect": 0.7799999999999999
+    },
+    {
+      "id": "aspen-snowmass",
+      "name": "Snowmass",
+      "region": "us-rockies",
+      "score": 58.120416470588225,
+      "effect": 0.23399999999999996
+    },
+    {
+      "id": "arapahoe-basin",
+      "name": "Arapahoe Basin",
+      "region": "us-rockies",
+      "score": 56.61764705882353,
+      "effect": 0.12999999999999998
+    },
+    {
+      "id": "copper",
+      "name": "Copper Mountain",
+      "region": "us-rockies",
+      "score": 53.77792352941177,
+      "effect": 0.10399999999999998
+    },
+    {
+      "id": "winter-park",
+      "name": "Winter Park",
+      "region": "us-rockies",
+      "score": 51.38847058823529,
+      "effect": 0.06499999999999999
+    },
+    {
+      "id": "steamboat",
+      "name": "Steamboat",
+      "region": "us-rockies",
+      "score": 40.262188235294126,
+      "effect": -0.06499999999999999
+    },
+    {
+      "id": "eldora",
+      "name": "Eldora",
+      "region": "us-rockies",
+      "score": 50.18317647058823,
+      "effect": 0.06499999999999999
+    },
+    {
+      "id": "taos",
+      "name": "Taos Ski Valley",
+      "region": "us-southwest",
+      "score": 98.10987647058823,
+      "effect": 1
+    },
+    {
+      "id": "jackson-hole",
+      "name": "Jackson Hole",
+      "region": "us-rockies",
+      "score": 23.172512941176475,
+      "effect": -0.4549999999999999
+    },
+    {
+      "id": "big-sky",
+      "name": "Big Sky",
+      "region": "us-rockies",
+      "score": 33.89031764705882,
+      "effect": -0.25999999999999995
+    },
+    {
+      "id": "sun-valley",
+      "name": "Sun Valley",
+      "region": "us-rockies",
+      "score": 31.543235294117647,
+      "effect": -0.12999999999999998
+    },
+    {
+      "id": "vail",
+      "name": "Vail",
+      "region": "us-rockies",
+      "score": 50.30796470588235,
+      "effect": 0.06499999999999999
+    },
+    {
+      "id": "beaver-creek",
+      "name": "Beaver Creek",
+      "region": "us-rockies",
+      "score": 50.106352941176475,
+      "effect": 0.07799999999999999
+    },
+    {
+      "id": "breckenridge",
+      "name": "Breckenridge",
+      "region": "us-rockies",
+      "score": 55.43389411764706,
+      "effect": 0.10399999999999998
+    },
+    {
+      "id": "keystone",
+      "name": "Keystone",
+      "region": "us-rockies",
+      "score": 51.73651764705883,
+      "effect": 0.10399999999999998
+    },
+    {
+      "id": "crested-butte",
+      "name": "Crested Butte",
+      "region": "us-rockies",
+      "score": 59.60663529411765,
+      "effect": 0.25999999999999995
+    },
+    {
+      "id": "telluride",
+      "name": "Telluride",
+      "region": "us-rockies",
+      "score": 71.1880588235294,
+      "effect": 0.4549999999999999
+    },
+    {
+      "id": "schweitzer",
+      "name": "Schweitzer",
+      "region": "us-pnw",
+      "score": 7.583176470588235,
+      "effect": -0.585
+    },
+    {
+      "id": "crystal-mountain",
+      "name": "Crystal Mountain",
+      "region": "us-pnw",
+      "score": 2.170047058823536,
+      "effect": -0.7799999999999999
+    },
+    {
+      "id": "snoqualmie",
+      "name": "The Summit at Snoqualmie",
+      "region": "us-pnw",
+      "score": 0,
+      "effect": -0.8449999999999999
+    },
+    {
+      "id": "mt-bachelor",
+      "name": "Mt. Bachelor",
+      "region": "us-pnw",
+      "score": 15.756441176470588,
+      "effect": -0.585
+    },
+    {
+      "id": "stevens-pass",
+      "name": "Stevens Pass",
+      "region": "us-pnw",
+      "score": 0,
+      "effect": -0.8059999999999999
+    },
+    {
+      "id": "killington",
+      "name": "Killington",
+      "region": "us-east",
+      "score": 3.933405882352946,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "stratton",
+      "name": "Stratton",
+      "region": "us-east",
+      "score": 5.367647058823533,
+      "effect": -0.4549999999999999
+    },
+    {
+      "id": "sugarbush",
+      "name": "Sugarbush",
+      "region": "us-east",
+      "score": 5.569864705882356,
+      "effect": -0.49399999999999994
+    },
+    {
+      "id": "sunday-river",
+      "name": "Sunday River",
+      "region": "us-east",
+      "score": 1.8117647058823572,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "sugarloaf",
+      "name": "Sugarloaf",
+      "region": "us-east",
+      "score": 1.4541352941176506,
+      "effect": -0.5459999999999999
+    },
+    {
+      "id": "loon",
+      "name": "Loon Mountain",
+      "region": "us-east",
+      "score": 2.9470588235294164,
+      "effect": -0.49399999999999994
+    },
+    {
+      "id": "snowshoe",
+      "name": "Snowshoe",
+      "region": "us-east",
+      "score": 24.31412705882353,
+      "effect": -0.12999999999999998
+    },
+    {
+      "id": "boyne-mountain",
+      "name": "Boyne Mountain",
+      "region": "us-east",
+      "score": 0,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "the-highlands",
+      "name": "The Highlands",
+      "region": "us-east",
+      "score": 0,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "stowe",
+      "name": "Stowe",
+      "region": "us-east",
+      "score": 3.152941176470592,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "okemo",
+      "name": "Okemo",
+      "region": "us-east",
+      "score": 5.8147058823529445,
+      "effect": -0.4549999999999999
+    },
+    {
+      "id": "mount-snow",
+      "name": "Mount Snow",
+      "region": "us-east",
+      "score": 8.100000000000003,
+      "effect": -0.38999999999999996
+    },
+    {
+      "id": "mount-sunapee",
+      "name": "Mount Sunapee",
+      "region": "us-east",
+      "score": 5.435294117647062,
+      "effect": -0.4159999999999999
+    },
+    {
+      "id": "attitash",
+      "name": "Attitash",
+      "region": "us-east",
+      "score": 2.7117647058823575,
+      "effect": -0.49399999999999994
+    },
+    {
+      "id": "wildcat",
+      "name": "Wildcat",
+      "region": "us-east",
+      "score": 2.6316352941176526,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "hunter",
+      "name": "Hunter Mountain",
+      "region": "us-east",
+      "score": 10.455882352941178,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "revelstoke",
+      "name": "Revelstoke",
+      "region": "canada-west",
+      "score": 0.18352941176470416,
+      "effect": -0.715
+    },
+    {
+      "id": "lake-louise",
+      "name": "Lake Louise",
+      "region": "canada-west",
+      "score": 4.153117647058831,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "sunshine-village",
+      "name": "Banff Sunshine",
+      "region": "canada-west",
+      "score": 8.687141176470597,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "fernie",
+      "name": "Fernie",
+      "region": "canada-west",
+      "score": 10.236141176470593,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "kicking-horse",
+      "name": "Kicking Horse",
+      "region": "canada-west",
+      "score": 4.058631764705891,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "sun-peaks",
+      "name": "Sun Peaks",
+      "region": "canada-west",
+      "score": 1.946423529411772,
+      "effect": -0.6499999999999999
+    },
+    {
+      "id": "red-mountain",
+      "name": "RED Mountain",
+      "region": "canada-west",
+      "score": 9.849796470588238,
+      "effect": -0.5199999999999999
+    },
+    {
+      "id": "panorama",
+      "name": "Panorama",
+      "region": "canada-west",
+      "score": 3.9735223529411763,
+      "effect": -0.585
+    },
+    {
+      "id": "whistler-blackcomb",
+      "name": "Whistler Blackcomb",
+      "region": "canada-west",
+      "score": 0.6766988235294118,
+      "effect": -0.715
+    },
+    {
+      "id": "tremblant",
+      "name": "Mont Tremblant",
+      "region": "canada-east",
+      "score": 0,
+      "effect": -0.585
+    },
+    {
+      "id": "blue-mountain-on",
+      "name": "Blue Mountain",
+      "region": "canada-east",
+      "score": 0,
+      "effect": -0.715
+    },
+    {
+      "id": "mont-sainte-anne",
+      "name": "Mont-Sainte-Anne",
+      "region": "canada-east",
+      "score": 0,
+      "effect": -0.585
+    },
+    {
+      "id": "zermatt",
+      "name": "Zermatt",
+      "region": "europe",
+      "score": 59.806623529411766,
+      "effect": 0.38999999999999996
+    },
+    {
+      "id": "chamonix",
+      "name": "Chamonix Mont-Blanc",
+      "region": "europe",
+      "score": 58.76596588235294,
+      "effect": 0.4159999999999999
+    },
+    {
+      "id": "dolomiti-superski",
+      "name": "Dolomiti Superski",
+      "region": "europe",
+      "score": 41.726058823529414,
+      "effect": 0.12999999999999998
+    },
+    {
+      "id": "st-anton",
+      "name": "St. Anton am Arlberg",
+      "region": "europe",
+      "score": 56.80056470588236,
+      "effect": 0.364
+    },
+    {
+      "id": "kitzbuhel",
+      "name": "Kitzbuhel",
+      "region": "europe",
+      "score": 43.01623529411764,
+      "effect": 0.23399999999999996
+    },
+    {
+      "id": "grandvalira",
+      "name": "Grandvalira",
+      "region": "europe",
+      "score": 46.696884705882354,
+      "effect": 0.25999999999999995
+    },
+    {
+      "id": "andermatt-sedrun",
+      "name": "Andermatt-Sedrun",
+      "region": "europe",
+      "score": 52.31001529411765,
+      "effect": 0.32499999999999996
+    },
+    {
+      "id": "crans-montana",
+      "name": "Crans-Montana",
+      "region": "europe",
+      "score": 54.964507058823536,
+      "effect": 0.364
+    },
+    {
+      "id": "verbier",
+      "name": "Verbier 4 Vallees",
+      "region": "europe",
+      "score": 56.48968117647059,
+      "effect": 0.38999999999999996
+    },
+    {
+      "id": "les-3-vallees",
+      "name": "Les 3 Vallees",
+      "region": "europe",
+      "score": 54.01617529411765,
+      "effect": 0.38999999999999996
+    },
+    {
+      "id": "niseko",
+      "name": "Niseko United",
+      "region": "japan",
+      "score": 18.264705882352942,
+      "effect": -0.38999999999999996
+    },
+    {
+      "id": "rusutsu",
+      "name": "Rusutsu",
+      "region": "japan",
+      "score": 17.32352941176471,
+      "effect": -0.38999999999999996
+    },
+    {
+      "id": "arai",
+      "name": "Lotte Arai",
+      "region": "japan",
+      "score": 2.25,
+      "effect": -0.715
+    },
+    {
+      "id": "thredbo",
+      "name": "Thredbo",
+      "region": "south-pacific",
+      "score": 15.950062352941178,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "mt-buller",
+      "name": "Mt Buller",
+      "region": "south-pacific",
+      "score": 15.862008235294118,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "coronet-peak",
+      "name": "Coronet Peak",
+      "region": "south-pacific",
+      "score": 40.46460235294117,
+      "effect": 0.19499999999999998
+    },
+    {
+      "id": "perisher",
+      "name": "Perisher",
+      "region": "south-pacific",
+      "score": 17.3457,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "mt-hotham",
+      "name": "Mt Hotham",
+      "region": "south-pacific",
+      "score": 16.146843529411765,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "falls-creek",
+      "name": "Falls Creek",
+      "region": "south-pacific",
+      "score": 16.659550588235298,
+      "effect": -0.32499999999999996
+    },
+    {
+      "id": "valle-nevado",
+      "name": "Valle Nevado",
+      "region": "south-america",
+      "score": 83.4309411764706,
+      "effect": 0.715
+    }
+  ]
+}

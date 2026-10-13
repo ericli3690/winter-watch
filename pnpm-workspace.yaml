@@ -1,5 +1,8 @@
 # pnpm >=12 reads settings from here, not from package.json.
 # unrs-resolver is the native resolver behind eslint-config-next; it needs
-# its postinstall to build. Declared so CI/Vercel installs never prompt.
+# its postinstall to build. esbuild (under tsx, for the backtest scripts) gets
+# its binary from an optional platform package, so its postinstall is skipped.
+# Declared so CI/Vercel installs never prompt.
 allowBuilds:
+  esbuild: false
   unrs-resolver: true

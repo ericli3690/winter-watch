@@ -35,7 +35,8 @@ splitting on whitespace. It is exercised against all ~2,350 rows of history.
 Four inputs, all in `src/lib/score.ts`:
 
 1. **Teleconnection.** Each resort has an `ensoSensitivity` in `[-1, 1]` for how
-   its winter precipitation responded to past El Niños. That gets scaled by the
+   its winter precipitation responded to past El Niños, fitted from 1981–2025
+   (see [the backtest](docs/enso-backtest/README.md)). That gets scaled by the
    current event's magnitude and by its flavour: eastern-Pacific events (warm
    Niño 1+2, cool Niño 4) steer the subtropical jet across the southern US, so
    the south gets storms the north misses.
@@ -48,12 +49,13 @@ Four inputs, all in `src/lib/score.ts`:
    mixed 65/35 with the seasonal signal so a single run does not decide the
    order.
 
-The weights are an editorial position rather than a fitted model, so here they
-are in full:
+The sensitivities are fitted; the weights below are still an editorial position,
+so here they are in full:
 
 | Term | Range | What it does |
 | --- | --- | --- |
-| Teleconnection backbone | 0–100 | `50 + 50 × effect`, where `effect = ensoSensitivity × gain`, clamped to `[-1, 1]` |
+| Teleconnection backbone | 0–100 | `50 + 50 × effect`, where `effect = tanh(ensoSensitivity × gain)` |
+| Sensitivity | −1 to 1 | Standardised Dec–Mar precipitation anomaly per unit of gain, pooled within region and shrunk toward zero; Jun–Sep for the Southern Hemisphere |
 | Flavour gain | ×0.7–1.3 | `0.7 + 0.6 × epGradient`; `epGradient` is the Niño 1+2 minus Niño 4 spread over 3 |
 | Event magnitude | 0–1 | `abs(Niño 3.4) / 2`, so the "very strong" threshold maps to 1 |
 | Elevation resilience | 0–1 | `0.65 × base + 0.35 × summit`, normalised over 2,000–9,500 ft and 4,000–13,000 ft |
@@ -64,6 +66,21 @@ are in full:
 | Live: rain penalty | 0 to −22 | −3 per day warm and wet enough to rain at grid level |
 | Seasonal/live blend | 65/35 | live leads, but one model run cannot decide the order |
 | Live-mode trigger | 6 in | the best 7-day total on screen, above which the board flips to live |
+
+`tanh` replaced a hard clamp. Event magnitude and flavour gain both cap at 1, so
+a record event like 2026–27 maxes the gain at 1.3, and the clamp pinned every
+resort with a sensitivity above about 0.77 at the same score. `tanh` is close to
+linear for the weak and moderate events most winters bring, and it never ties
+two resorts with different sensitivities. The caps themselves stay: the
+backtest finds no evidence that an event beyond Niño 3.4 +2 °C does more than
+one at +2 °C, so the model does not extrapolate past the record.
+
+The backtest also says how much of this to believe. Out of sample, no version
+of the teleconnection predicts the size of a winter's anomaly better than its
+neutral-winter average, and it ranks resorts only modestly better than chance
+(an across-resort correlation of about 0.2 in the north). That is why the
+fitted northern sensitivities are small, and why elevation and snow climatology
+now carry most of a northern resort's standing.
 
 In the northern preseason every US grid point reads zero, so the app says so and
 ranks on the seasonal signal instead of on noise. That choice is made *per region*,
@@ -162,9 +179,9 @@ things and reading the diffs. Worth knowing where that does and does not matter:
 - **The numbers are real; the opinions are mine.** Every value on the page comes
   from a live NOAA endpoint, and the fiddly parts — that fixed-width CPC weekly
   file especially — were checked against the actual feeds, not invented
-  fixtures. The scoring weights in `src/lib/score.ts` are one reading of
-  published ENSO composites. They are written down so you can disagree with
-  them.
+  fixtures. The resort sensitivities are fitted by a committed backtest
+  (`pnpm backtest`); the other scoring weights in `src/lib/score.ts` are an
+  editorial position. Both are written down so you can disagree with them.
 - **The pass roster is hand-compiled** from published operator material, so it
   can be wrong or go stale. The operators' own destination pages are the
   authority.

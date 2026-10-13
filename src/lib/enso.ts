@@ -2,6 +2,7 @@ import { cacheLife, cacheTag } from 'next/cache'
 import {
   classifyPhase,
   classifyStrength,
+  eventMagnitude,
   type EnsoPhase,
   type EnsoStrength,
 } from './enso-scale'
@@ -226,7 +227,7 @@ export async function getEnsoState(): Promise<EnsoState> {
     strength: classifyStrength(latest.nino34),
     flavor,
     epGradient,
-    magnitude: clamp01(Math.abs(latest.nino34) / 2),
+    magnitude: eventMagnitude(latest.nino34),
     oniSeason: latestOni?.season ?? null,
     oniValue: latestOni?.value ?? null,
     nino34History: rows.slice(-12).map((r) => ({ week: r.week, anomaly: r.nino34 })),
