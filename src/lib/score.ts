@@ -82,11 +82,21 @@ export function elevationResilience(r: Resort): Unit {
   return 0.65 * base + 0.35 * summit
 }
 
+/**
+ * Squash the raw teleconnection into [-1, 1] without a ceiling resorts can tie on.
+ *
+ * @remarks
+ * - A hard clamp pinned every resort above sensitivity ~0.77 once a record event maxed the gain.
+ * - tanh is near-linear below 0.5, so weak and moderate events score almost as before.
+ * - It is strictly monotonic, so a more sensitive resort always outranks a less sensitive one.
+ */
+const saturate = (raw: number): SignedUnit => Math.tanh(raw)
+
 export function seasonalScore(
   r: Resort,
   enso: EnsoState,
 ): { score: Score; effect: SignedUnit } {
-  const effect = clamp(r.ensoSensitivity * teleconnectionGain(enso), -1, 1)
+  const effect = saturate(r.ensoSensitivity * teleconnectionGain(enso))
   const resilience = elevationResilience(r)
 
   // Teleconnection is the backbone: -1 -> 0, 0 -> 50, +1 -> 100.
